@@ -5,7 +5,7 @@ dataRoot: ./data
 cardsCacheCapacity: 100
 # -- SERVER CONFIGURATION --
 # Listen for incoming connections
-listen: false
+listen: true
 # Enables IPv6 and/or IPv4 protocols. Need to have at least one enabled!
 protocol:
     ipv4: true
