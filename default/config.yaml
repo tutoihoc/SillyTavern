@@ -5,7 +5,7 @@ dataRoot: ./data
 cardsCacheCapacity: 100
 # -- SERVER CONFIGURATION --
 # Listen for incoming connections
-listen: false
+listen: true
 # Enables IPv6 and/or IPv4 protocols. Need to have at least one enabled!
 protocol:
     ipv4: true
@@ -17,14 +17,14 @@ dnsPreferIPv6: false
 # - Use options like 'localhost', 'st.example.com'
 autorunHostname: "auto"
 # Server port
-port: 8000
+port: 7860
 # Overrides the port for autorun in browser.
 # - Use -1 to use the server port.
 # - Specify a port to override the default.
 autorunPortOverride: -1
 # -- SECURITY CONFIGURATION --
 # Toggle whitelist mode
-whitelistMode: true
+whitelistMode: false
 # Whitelist will also verify IP in X-Forwarded-For / X-Real-IP headers
 enableForwardedWhitelist: true
 # Whitelist of allowed IP addresses
@@ -38,7 +38,7 @@ basicAuthUser:
   username: "user"
   password: "password"
 # Enables CORS proxy middleware
-enableCorsProxy: false
+enableCorsProxy: true
 # -- REQUEST PROXY CONFIGURATION --
 requestProxy:
   # If a proxy is enabled, all outgoing HTTP/HTTPS requests will be routed through it.
@@ -76,10 +76,10 @@ cookieSecret: ''
 # Disable CSRF protection - NOT RECOMMENDED
 disableCsrfProtection: false
 # Disable startup security checks - NOT RECOMMENDED
-securityOverride: false
+securityOverride: true
 # -- ADVANCED CONFIGURATION --
 # Open the browser automatically
-autorun: true
+autorun: false
 # Avoids using 'localhost' for autorun in auto mode.
 # use if you don't have 'localhost' in your hosts file
 avoidLocalhost: false
